@@ -16,11 +16,11 @@ padding: 16px;
     margin: 20px 0 0 0;
  }
 
- .weather1 img {
-    display: inline-block;
-    height: 64px;
-    margin-right: 10px;
-    width: 64px;
+ .weather1 canvas {
+   display: inline-block;
+   margin-right: 5px;
+   margin-top: 5px;
+    
  }
 
  .weather1 .temperature {

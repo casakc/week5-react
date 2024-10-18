@@ -14,13 +14,16 @@ function handleResponse(response) {
         ready: true,
         city: response.data.city,
         description: today.condition.description,
-        iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${today.condition.icon}.png`,
+        icon: today.condition.icon,
         date: new Date(today.time*1000),
         temperature: today.temperature.day,
         humidity: today.temperature.humidity,
         wind: Math.round(today.wind.speed),
         });
         }
+
+        
+          
 
 function search() {
     const key = "bb44bab20a1to1942fe0345a55b0085e";
