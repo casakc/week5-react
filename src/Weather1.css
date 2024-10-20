@@ -6,9 +6,6 @@
 padding: 16px;
 }
 
-
-
-
 .weather1 h1 {
     font-size: 24px;
     font-weight: 100;
@@ -50,4 +47,8 @@ padding: 16px;
         line-height: 19px;
         list-style: none;
 }   
-    
+
+.float-left span {
+   display: inline-block;
+    }
+ 

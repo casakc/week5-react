@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather1.css";
 
@@ -12,6 +13,7 @@ function handleResponse(response) {
     const today = response.data.daily[0];
     setWeatherData({
         ready: true,
+        coordinates: response.data.coordinates,
         city: response.data.city,
         description: today.condition.description,
         icon: today.condition.icon,
@@ -52,6 +54,7 @@ setQuery(event.target.value);
             </div>
             </form>
             <WeatherInfo data={weatherData} />
+            <WeatherForecast coordinates={weatherData.coordinates}/>
     </div>
 } else {
     search();
